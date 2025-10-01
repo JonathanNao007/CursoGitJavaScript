@@ -2,18 +2,49 @@
 <html>
     <head>
         <script src="codigo.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"></link>
         <title>Convertidor de metros a kilometros</title>
     </head>
     <body>
-        <h1>Ejemplo para revisar el tema de variables y operadores matematicos.</h1>
-        <h2>Convertidor de metros a kilometros</h2>
-        <label for="cajaMetros">Ingresa el numero a convertir en metros:</label>
-        <input type="text" id="cajaMetros"> 
+        <div class="seccionEjercicio">
+            <h1>Ejemplo para revisar el tema de variables y operadores matematicos.</h1>
+            <h2>Convertidor de metros a kilometros</h2>
+            <label for="cajaMetros">Ingresa el numero a convertir en metros:</label>
+            <input type="text" id="cajaMetros"> 
+            <br/>
+            <button type="button" class="form-control" onclick="covertMetersToKm()">Convertir</button>
+            <br/>
+            <br/>
+            <label for="cajaKilometros">Resultado en kilometros es:</label>
+            <input type="text" id="cajaKilometros" disabled>
+        </div>
         <br/>
-        <button type="button" class="form-control" onclick="covertMetersToKm()">Convertir</button>
+        <div class="seccionEjercicio">
+            <h1>Ejercicio 1</h1>
+            <h2>Calculadora de IMC</h2>
+            <h3>Ingrese los siguientes datos.</h3>
+            <label for="inPeso">Peso (kg):</label>
+            <input type="text" id="inPeso">
+            <br/>
+            <label for="inAltura">Altura (m):</label>
+            <input type="text" id="inAltura">
+            <br/>
+            <label for="outIMC">IMC:</label>
+            <input type="text" id="outIMC" disabled>
+            <button class="form-control" onclick="calculaIMC()">Obtener IMC</button>
+        </div>  
         <br/>
+        <div class="seccionEjercicio">
+            <h1>Ejercicio 2</h1>
+            <h2>Conversión de temperatura</h2>
+            <h3>Ingrese el siguiente dato.</h3>
+            <label for="inCentigrados">Grados C:</label>
+            <input type="text" id="inCentigrados">
+            <br/>
+            <label for="outFahrenheit">Grados F:</label>
+            <input type="text" id="outGF" disabled>
+            <button class="form-control" onclick="calculaGradosF()">Calcular</button>
+        </div>  
         <br/>
-        <label for="cajaKilometros">Resultado en kilometros es:</label>
-        <input type="text" id="cajaKilometros" disabled>
     </body>
 </html>
