@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="codigo.js"></script>
         <title>Convertidor de metros a kilometros</title>
     </head>
     <body>
         <h1>Ejemplo para revisar el tema de variables y operadores matematicos.</h1>
         <h2>Convertidor de metros a kilometros</h2>
-        <label for="">Ingresa el numero a convertir en metros</label>
+        <label for="cajaMetros">Ingresa el numero a convertir en metros:</label>
         <input type="text" id="cajaMetros"> 
-        <button type="button" class="form-control">Convertir</button>
         <br/>
-        <label for="">Resultado en kilometros es:</label>
-        <input type="text" id="cajaKilometros">
+        <button type="button" class="form-control" onclick="covertMetersToKm()">Convertir</button>
+        <br/>
+        <br/>
+        <label for="cajaKilometros">Resultado en kilometros es:</label>
+        <input type="text" id="cajaKilometros" disabled>
     </body>
 </html>
