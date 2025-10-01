@@ -1,0 +1,23 @@
+/*Comentario en hoja de estilos*/
+h1{
+    color: DarkOrange;
+}
+h2{
+    color: DarkKhaki;
+}
+
+label{
+    color: IndianRed;
+}
+
+button{
+    color: DarkCyan;
+}
+
+input{
+    color: DarkGreen;
+}
+
+body {
+    background-color: Cornsilk;
+}
